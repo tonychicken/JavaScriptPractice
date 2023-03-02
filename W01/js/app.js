@@ -34,5 +34,21 @@ function add(){
     outputresult(calText,CurrentResult);
 
 }
-
 add_btn.addEventListener('click',add);
+
+
+
+function subtract(){
+    const op1=CurrentResult;
+    const op2=getuserInput();
+
+    CurrentResult-=op2
+    calText=`${op1}-${op2}`;
+    console.log(calText)
+    outputresult(calText,CurrentResult);
+
+}
+subtract_btn.addEventListener('click',subtract);
+
+
+
