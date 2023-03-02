@@ -1,8 +1,8 @@
 const number = document.querySelector('#input-number');
-const add = document.querySelector('#btn-add');
-const subtract = document.querySelector('#btn-subtract');
-const multiply = document.querySelector('#btn-multiply');
-const divide = document.querySelector('#btn-divide');
+const add_btn = document.querySelector('#btn-add');
+const subtract_btn = document.querySelector('#btn-subtract');
+const multiply_btn = document.querySelector('#btn-multiply');
+const divide_btn = document.querySelector('#btn-divide');
 
 
 
@@ -10,10 +10,29 @@ const calculation = document.querySelector('#current-calculation');
 const result = document.querySelector('#current-result');
 
 
-console.log(number,"number");
-console.log(add,"add");
-console.log(subtract,"subtract");
-console.log(multiply,"multiply");
-console.log(divide,"divide");
-console.log(calculation,"calculation");
-console.log(result,"result");
+
+
+const resultTemp=0;
+let CurrentResult=resultTemp;
+
+function getuserInput(){
+    return parseInt(number.value);
+}
+
+function outputresult(calculation123,result123){
+    calculation.textContent=calculation123;
+    result.textContent=result123
+}
+
+function add(){
+    const op1=CurrentResult;
+    const op2=getuserInput();
+
+    CurrentResult+=op2
+    calText=`${op1}+${op2}`;
+    console.log(calText)
+    outputresult(calText,CurrentResult);
+
+}
+
+add_btn.addEventListener('click',add);
