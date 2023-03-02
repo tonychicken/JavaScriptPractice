@@ -52,3 +52,15 @@ subtract_btn.addEventListener('click',subtract);
 
 
 
+function multiply(){
+    const op1=CurrentResult;
+    const op2=getuserInput();
+
+    CurrentResult*=op2
+    calText=`${op1}*${op2}`;
+    console.log(calText)
+    outputresult(calText,CurrentResult);
+
+}
+
+multiply_btn.addEventListener('click',multiply);
