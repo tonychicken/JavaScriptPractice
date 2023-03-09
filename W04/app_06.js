@@ -46,7 +46,7 @@ const menu = [
       price: 18.99,
       img: "./images/item-6.jpeg",
       desc: `Portland chicharrones ethical edison bulb, palo santo craft beer chia heirloom iPhone everyday`,
-    }
+    },
   ];
   
   
@@ -60,12 +60,11 @@ const menu = [
   
   const displayMenuItems=(menuItems)=>{
     let displayMenu=menuItems.map((item)=>{
-      console.log('item',item);
   
       return`
       </article>
       <article class="menu-item">
-        <img src="${item.img}" alt="menu item"class="photo">
+        <img src="${item.img}" alt=${item.title} class="photo">
         <div class="item-info">
           <header>
             <h4>${item.title}</h4>
@@ -78,9 +77,10 @@ const menu = [
       </article>  
       `
     })
+    console.log('displayMenu before join',displayMenu);
     displayMenu=displayMenu.join("");
   
-    console.log('displayMenu',displayMenu);
+    console.log('displayMenu after join',displayMenu);
   
     sectionCenter.innerHTML = displayMenu;
   }
