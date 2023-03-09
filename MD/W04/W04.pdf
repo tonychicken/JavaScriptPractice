@@ -377,16 +377,20 @@ blockquote {
 
 </head>
 <body>
-<h3 id="w03-p1-show-reviews0-info-when-dom-is-loaded">W03-P1: show reviews[0] info when DOM is loaded</h3>
-<p><img src="file:///c:/MD/W03/P1.jpg" alt="P1.png"></p>
-<h3 id="w03-p2-implement-next-button-and-show-the-sequence-in-consolelog">W03-P2: implement next button and show the sequence in console.log</h3>
-<p><img src="file:///c:/MD/W03/P2.jpg" alt="P2.png"></p>
-<h3 id="w03-p3-implement-prev-button-and-show-the-sequence-in-consolelog">W03-P3: implement prev button and show the sequence in console.log</h3>
-<p><img src="file:///c:/MD/W03/P4.jpg" alt="P4.png"></p>
-<h3 id="w03-p4-implement-suprise-me-button-and-show-the-sequence-in-consolelog">W03-P4: implement &quot;suprise me&quot; button and show the sequence in console.log</h3>
-<p><img src="file:///c:/MD/W03/P3.jpg" alt="P3.png"></p>
-<h3 id="w03-p5-git-log">W03-P5 git log</h3>
-<p><img src="file:///c:/MD/W03/P5.jpg" alt="P5.png"></p>
+<h3 id="github-url"><a href="https://github.com/tonychicken/JavaScriptPractice.git">Github URL</a></h3>
+<h3 id="w04-p1-add-3-images-of-my-meals-to-menu-array">W04-P1: add 3 images of my meals to menu array</h3>
+<p><img src="file:///c:/MD/W04/P1.jpg" alt="P1.png"></p>
+<p><img src="file:///c:/MD/W04/P2.jpg" alt="P2.png">
+f936a34 tonychicken     Thu Mar 9 23:29:51 2023 +0800   w04menustart</p>
+<h3 id="w04-p2-show-all-data-in-array-menu-into-html-section-center">W04-P2: show all data in array menu into html (section-center)</h3>
+<p><img src="file:///c:/MD/W04/P3.jpg" alt="P3.png">
+<img src="file:///c:/MD/W04/P4.jpg" alt="P4.png"></p>
+<p>455599d tonychicken     Thu Mar 9 23:42:47 2023 +0800   w04showalldatainarraymenuintohtml</p>
+<h3 id="w04-p4-implement-suprise-me-button-and-show-the-sequence-in-consolelog">W04-P4: implement &quot;suprise me&quot; button and show the sequence in console.log</h3>
+<p><img src="file:///c:/MD/W04/P3.jpg" alt="P5.png"></p>
+<h3 id="w04-p5-git-log">W04-P5 git log</h3>
+<p><img src="file:///c:/MD/W04/P5.jpg" alt="P5.png"></p>
+<p>$ git log --pretty=format:&quot;%h%x09%an%x09%ad%x09%s&quot; --after=&quot;2023-3-08&quot;</p>
 
 </body>
 </html>

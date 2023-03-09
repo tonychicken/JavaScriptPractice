@@ -77,10 +77,8 @@ const menu = [
       </article>  
       `
     })
-    console.log('displayMenu before join',displayMenu);
     displayMenu=displayMenu.join("");
   
-    console.log('displayMenu after join',displayMenu);
   
     sectionCenter.innerHTML = displayMenu;
   }
@@ -92,18 +90,18 @@ const menu = [
       }
       return values;
     },['all']);
-    //console.log('categories',categories);
   
     const categoryBtns=categories.map((category)=>{
       return `<button type="button" class="filter-btn" data-id=${category}>${category}</button>`
     })
     .join('');
   
+    console.log('categoryBtns before join',categoryBtns);
     btnContainer.innerHTML=categoryBtns;
   
   
     const filterBtns=btnContainer.querySelectorAll('.filter-btn')
-    console.log('filter-btn',filterBtns);
+    console.log('categoryBtns after join',filterBtns);
     filterBtns.forEach((btn)=>{
       btn.addEventListener('click',(e)=>{
         console.log('data-id',e.currentTarget.dataset.id);
