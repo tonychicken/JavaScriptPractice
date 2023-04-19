@@ -105,6 +105,13 @@ if(item.classList.contains('vercel')){
 }
 })
 
+const CloseDropdown = ((item)=>{
+  if(ClassDemo.classList.contains('show')){
+    ClassDemo.classList.remove("show")
+  }else{
+    ClassDemo.classList.add("show");
+  }
+})
 
 
 // const ShowDemo = ((week)=>{
