@@ -103,7 +103,7 @@ if(item.classList.contains('githubURL')){
   }
   if(item.classList.contains('vercel')){
     item.addEventListener('click', () => {
-      window.open('https://github.com/tonychicken/JavaScriptPractice/commits/main');
+      window.open('https://java-script-practice-qb7i.vercel.app/');
     });
   }
 })
