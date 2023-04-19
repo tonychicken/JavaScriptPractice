@@ -107,52 +107,52 @@ if(item.classList.contains('vercel')){
 
 
 
-const ShowDemo = ((week)=>{
+// const ShowDemo = ((week)=>{
 
-  const content = document.querySelector('#content');
+//   const content = document.querySelector('#content');
 
-  switch (week) {
-    case 'W1':
-      content.innerHTML = `<iframe src="./W01/index.html" style="width: 100%; height: 800px;" ></iframe>`;
-      break;
-    case 'W1-MD':
-      content.innerHTML = `<zero-md src="./MD/W01/W01.md"></zero-md>`;
-      break;
-    case 'W2':
-      content.innerHTML = `<iframe src="./W02/tictactoe_06.html" style="width: 100%; height: 800px;" ></iframe>`;
-      break;
-    case 'W2-MD':
-      content.innerHTML = `<zero-md src="./MD/W02/W02.md"></zero-md>`;
-      break;
-    case 'W3':
-      content.innerHTML = `<iframe src="./W03/index.html" style="width: 100%; height: 800px;" ></iframe>`;
-      break;
-    case 'W3-MD':
-      content.innerHTML = `<zero-md src="./MD/W03/W03.md"></zero-md>`;
-      break;
-    case 'W4':
-      content.innerHTML = `<iframe src="./W04/index.html" style="width: 100%; height: 800px;" ></iframe>`;
-      break;
-    case 'W4-MD':
-      content.innerHTML = `<zero-md src="./MD/W04/W04.md"></zero-md>`;
-      break;
-    case 'W5':
-      content.innerHTML = `<iframe src="./W05/index.html" style="width: 100%; height: 800px;" ></iframe>`;
-      break;
-    case 'W5-MD':
-      content.innerHTML = `<zero-md src="./MD/W05/W05.md"></zero-md>`;
-      break;
-    case 'W6':
-      content.innerHTML = `<iframe src="./W06/index.html" style="width: 100%; height: 800px;" ></iframe>`;
-      break;
-    case 'W6-MD':
-      content.innerHTML = `<zero-md src="./MD/W06/W06.md"></zero-md>`;
-      break;
-    default:
-      content.innerHTML = `<h2>No content available for this week yet.</h2>`;
-  }
+//   switch (week) {
+//     case 'W1':
+//       content.innerHTML = `<iframe src="./W01/index.html" style="width: 100%; height: 800px;" ></iframe>`;
+//       break;
+//     case 'W1-MD':
+//       content.innerHTML = `<zero-md src="./MD/W01/W01.md"></zero-md>`;
+//       break;
+//     case 'W2':
+//       content.innerHTML = `<iframe src="./W02/tictactoe_06.html" style="width: 100%; height: 800px;" ></iframe>`;
+//       break;
+//     case 'W2-MD':
+//       content.innerHTML = `<zero-md src="./MD/W02/W02.md"></zero-md>`;
+//       break;
+//     case 'W3':
+//       content.innerHTML = `<iframe src="./W03/index.html" style="width: 100%; height: 800px;" ></iframe>`;
+//       break;
+//     case 'W3-MD':
+//       content.innerHTML = `<zero-md src="./MD/W03/W03.md"></zero-md>`;
+//       break;
+//     case 'W4':
+//       content.innerHTML = `<iframe src="./W04/index.html" style="width: 100%; height: 800px;" ></iframe>`;
+//       break;
+//     case 'W4-MD':
+//       content.innerHTML = `<zero-md src="./MD/W04/W04.md"></zero-md>`;
+//       break;
+//     case 'W5':
+//       content.innerHTML = `<iframe src="./W05/index.html" style="width: 100%; height: 800px;" ></iframe>`;
+//       break;
+//     case 'W5-MD':
+//       content.innerHTML = `<zero-md src="./MD/W05/W05.md"></zero-md>`;
+//       break;
+//     case 'W6':
+//       content.innerHTML = `<iframe src="./W06/index.html" style="width: 100%; height: 800px;" ></iframe>`;
+//       break;
+//     case 'W6-MD':
+//       content.innerHTML = `<zero-md src="./MD/W06/W06.md"></zero-md>`;
+//       break;
+//     default:
+//       content.innerHTML = `<h2>No content available for this week yet.</h2>`;
+//   }
 
-})
+// })
 
 
 
