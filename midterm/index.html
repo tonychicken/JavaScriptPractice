@@ -37,14 +37,32 @@
             <div id="dropdown_ClassDemo" class="dropdown-menu  " aria-labelledby="navbarDropdownClassDemo">
               <div class="container">
                 <div class="row" style="width: 700PX;">
-                  <div class="col col-4">
+                  <div class="col col-4 row">
                     <h6 class="dropdown-header">Week 1~6</h6>
-                    <a class="dropdown-item" href="./W01/index.html">Week 1 (W1)</a>
-                    <a class="dropdown-item" href="./W02/tictactoe_06.html">Week 2 (W2)</a>
-                    <a class="dropdown-item" href="./W03/index.html">Week 3 (W3)</a>
-                    <a class="dropdown-item" href="./W04/index.html">Week 4 (W4)</a>
-                    <a class="dropdown-item" href="./W05/index.html">Week 5 (W5)</a>
-                    <a class="dropdown-item" href="./W06/index.html">Week 6 (W6)</a>                                                                    
+                    <div class="col col-6">
+                      <a class="dropdown-item" href="#" onclick="ShowDemo('W1')">Calculate</a>
+                      <a class="dropdown-item" href="#" onclick="ShowDemo('W2')">tictactoe_06</a>
+                    </div>
+                    <div class="col col-6">
+                      <a class="dropdown-item" href="#" onclick="ShowDemo('W1-MD')">(W1-MD)</a>
+                      <a class="dropdown-item" href="#" onclick="ShowDemo('W2-MD')">(W2-MD)</a>
+                    </div>
+                    <div class="col col-6">
+                      <a class="dropdown-item" href="#" onclick="ShowDemo('W3')" >(Review)</a>
+                      <a class="dropdown-item" href="#" onclick="ShowDemo('W4')">(Menu-1)</a>
+                    </div>
+                    <div class="col col-6">
+                      <a class="dropdown-item" href="#" onclick="ShowDemo('W3-MD')">W3-MD</a>
+                      <a class="dropdown-item" href="#" onclick="ShowDemo('W4-MD')">W4-MD</a>
+                    </div>
+                    <div class="col col-6">
+                      <a class="dropdown-item" href="#"onclick="ShowDemo('W5')">(Menu-2)</a>
+                      <a class="dropdown-item" href="#"onclick="ShowDemo('W6')">(Temp-Convert)</a>
+                    </div>
+                    <div class="col col-6">
+                      <a class="dropdown-item" href="#" onclick="ShowDemo('W5-MD')">(W5-MD)</a>  
+                      <a class="dropdown-item" href="#" onclick="ShowDemo('W6-MD')">(W6-MD)</a>  
+                    </div>                                                                  
                   </div>
                   <div class="col col-4">
                     <h6 class="dropdown-header">Midprep Exam (W7)</h6>
@@ -100,7 +118,10 @@
         <a class="nav-link vercel" href="#"><i class="fas fa-cog"></i></a>
       </div>
     </nav>
-    <div id="content"></div>
+    <div id="content">
+    </div>
   </body>
-  <script src="app.js"></script>
+  <script src="app.js" >
+    
+  </script>
 </html>
