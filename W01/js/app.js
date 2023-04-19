@@ -8,7 +8,16 @@ const divide_btn = document.querySelector('#btn-divide');
 
 const calculation = document.querySelector('#current-calculation');
 const result = document.querySelector('#current-result');
-
+const ClassdemoOpenBtn = document.querySelector('#navbarDropdownClassDemo');
+const ClassDemo = document.querySelector('#dropdown_ClassDemo');
+console.log(ClassDemo)
+ClassdemoOpenBtn.addEventListener('click',()=>{
+  if(ClassDemo.classList.contains('show')){
+    ClassDemo.classList.remove("show")
+  }else{
+    ClassDemo.classList.add("show");
+  }
+});
 
 
 

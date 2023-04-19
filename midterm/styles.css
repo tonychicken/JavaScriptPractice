@@ -1,0 +1,109 @@
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+
+.main-header {
+  width: 100%;
+  background-color: rgb(232, 48, 21);
+  position: relative;
+  transform: translateY(-100%);
+  transition: 1s;
+}
+
+#navbarToggle {
+  display: none;
+}
+
+#navbarToggle:checked~.main-header {
+  transform: translateY(0);
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-header h1 {
+  line-height: 60px;
+  margin: 0 15px;
+}
+
+.main-menu {
+  display: flex;
+  position: relative;
+}
+
+.main-menu li {
+  position: relative;
+  transition: .5s;
+}
+
+.main-menu li a {
+  padding: 0 15px;
+  line-height: 60px;
+}
+
+.main-menu>li::after {
+  content: '';
+  position: absolute;
+  height: 4px;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background-color: #fff;
+  transition: .5s;
+}
+
+.main-menu li:hover {
+  background-color: rgb(176, 41, 20);
+}
+
+.main-menu>li:hover::after {
+  left: 0;
+  right: 0;
+}
+
+.sub-menu {
+  position: absolute;
+  left: 50%;
+  background-color: rgba(232, 48, 21, 0.8);
+  width: 150%;
+  text-align: center;
+  transform: translateX(-50%);
+  display: none;
+}
+
+.main-menu li:hover .sub-menu {
+  display: block;
+}
+
+label {
+  color: #fff;
+  display: inline-block;
+  background-color: rgb(232, 48, 21);
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  transform: translateY(100%);
+  border-radius: 0 0 6px 6px;
+  cursor: pointer;
+}
+
+.material-icons {
+  transform: rotate(0);
+  transition: .6s;
+}
+
+#navbarToggle:checked~.main-header .material-icons {
+  transform: rotate(180deg);
+}
+ul li{
+  list-style-type:none;
+  list-style-image: url(images/icon.gif);
+  }

@@ -2,6 +2,16 @@ const reset_btn = document.querySelector('#reset');
 const container = document.querySelector('#container');
 
 const allLi = document.querySelectorAll('#board li');
+const ClassdemoOpenBtn = document.querySelector('#navbarDropdownClassDemo');
+const ClassDemo = document.querySelector('#dropdown_ClassDemo');
+console.log(ClassDemo)
+ClassdemoOpenBtn.addEventListener('click',()=>{
+  if(ClassDemo.classList.contains('show')){
+    ClassDemo.classList.remove("show")
+  }else{
+    ClassDemo.classList.add("show");
+  }
+});
 let checkTurn = 0;
 console.log(allLi)
 const checkwin = (player) => {

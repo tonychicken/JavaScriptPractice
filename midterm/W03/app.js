@@ -82,3 +82,22 @@ randomBtn.addEventListener('click',()=>{
   ShowReviews(Count);
 });
 
+const gitlink = document.querySelectorAll('.nav-link');
+gitlink.forEach((item)=>{
+if(item.classList.contains('github')){
+  item.addEventListener('click', () => {
+    window.open('https://github.com/tonychicken/JavaScriptPractice.git');
+  });
+}
+if(item.classList.contains('githubURL')){
+  item.addEventListener('click', () => {
+    window.open('https://github.com/tonychicken/JavaScriptPractice/commits/main');
+  });
+}
+if(item.classList.contains('vercel')){
+  item.addEventListener('click', () => {
+    window.open('https://github.com/tonychicken/JavaScriptPractice/commits/main');
+  });
+}
+})
+

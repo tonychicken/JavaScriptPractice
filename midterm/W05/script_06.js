@@ -45,3 +45,22 @@ for (let i = 0; i < btnsCloseModal.length; i++) {
 for (let i = 0; i < btnsOpenModal.length; i++) {
     btnsOpenModal[i].addEventListener('click', openModal(i));
 }
+
+const gitlink = document.querySelectorAll('.nav-link');
+gitlink.forEach((item)=>{
+if(item.classList.contains('github')){
+  item.addEventListener('click', () => {
+    window.open('https://github.com/tonychicken/JavaScriptPractice.git');
+  });
+}
+if(item.classList.contains('githubURL')){
+    item.addEventListener('click', () => {
+      window.open('https://github.com/tonychicken/JavaScriptPractice/commits/main');
+    });
+  }
+  if(item.classList.contains('vercel')){
+    item.addEventListener('click', () => {
+      window.open('https://github.com/tonychicken/JavaScriptPractice/commits/main');
+    });
+  }
+})
