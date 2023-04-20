@@ -38,16 +38,7 @@ const info = document.querySelector('#info');
 const prevBtn = document.querySelector('.prev-btn');
 const nextBtn = document.querySelector('.next-btn');
 const randomBtn = document.querySelector('.random-btn');
-const ClassdemoOpenBtn = document.querySelector('#navbarDropdownClassDemo');
-const ClassDemo = document.querySelector('#dropdown_ClassDemo');
-console.log(ClassDemo)
-ClassdemoOpenBtn.addEventListener('click',()=>{
-  if(ClassDemo.classList.contains('show')){
-    ClassDemo.classList.remove("show")
-  }else{
-    ClassDemo.classList.add("show");
-  }
-});
+
 let Count=0;
 ShowReviews=(person)=>{
   const item =  reviews[person];
