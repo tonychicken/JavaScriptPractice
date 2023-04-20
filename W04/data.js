@@ -49,14 +49,3 @@ export const menu = [
     desc: `Portland chicharrones ethical edison bulb, palo santo craft beer chia heirloom iPhone everyday`,
   },
 ];
-
-const ClassdemoOpenBtn = document.querySelector('#navbarDropdownClassDemo');
-const ClassDemo = document.querySelector('#dropdown_ClassDemo');
-console.log(ClassDemo)
-ClassdemoOpenBtn.addEventListener('click',()=>{
-  if(ClassDemo.classList.contains('show')){
-    ClassDemo.classList.remove("show")
-  }else{
-    ClassDemo.classList.add("show");
-  }
-});
