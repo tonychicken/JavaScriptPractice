@@ -14,6 +14,7 @@ const resultTemp=0;
 let CurrentResult=resultTemp;
 
 function getuserInput(){
+    console.log(number.value);
     return parseInt(number.value);
 }
 
