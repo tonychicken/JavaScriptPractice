@@ -22,7 +22,7 @@ window.addEventListener('DOMContentLoaded',()=>{
         console.log('Online',URL);
     }else{
         presentAnimals(LOCAL_URL);
-        console.log('config_06.js',{LOCAL_URL,hasNetwork,serchItems})
+        console.log('Local',{LOCAL_URL,hasNetwork,serchItems})
     }
 });
 
