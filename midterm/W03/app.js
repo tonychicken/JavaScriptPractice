@@ -38,16 +38,7 @@ const info = document.querySelector('#info');
 const prevBtn = document.querySelector('.prev-btn');
 const nextBtn = document.querySelector('.next-btn');
 const randomBtn = document.querySelector('.random-btn');
-const ClassdemoOpenBtn = document.querySelector('#navbarDropdownClassDemo');
-const ClassDemo = document.querySelector('#dropdown_ClassDemo');
-console.log(ClassDemo)
-ClassdemoOpenBtn.addEventListener('click',()=>{
-  if(ClassDemo.classList.contains('show')){
-    ClassDemo.classList.remove("show")
-  }else{
-    ClassDemo.classList.add("show");
-  }
-});
+
 let Count=0;
 ShowReviews=(person)=>{
   const item =  reviews[person];
@@ -81,23 +72,4 @@ randomBtn.addEventListener('click',()=>{
   Count=Math.floor(Math.random()*reviews.length);
   ShowReviews(Count);
 });
-
-const gitlink = document.querySelectorAll('.nav-link');
-gitlink.forEach((item)=>{
-if(item.classList.contains('github')){
-  item.addEventListener('click', () => {
-    window.open('https://github.com/tonychicken/JavaScriptPractice.git');
-  });
-}
-if(item.classList.contains('githubURL')){
-  item.addEventListener('click', () => {
-    window.open('https://github.com/tonychicken/JavaScriptPractice/commits/main');
-  });
-}
-if(item.classList.contains('vercel')){
-  item.addEventListener('click', () => {
-    window.open('https://java-script-practice-qb7i.vercel.app/');
-  });
-}
-})
 
