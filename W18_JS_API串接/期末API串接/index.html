@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cocktails</title>
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
+  <!-- css -->
+  <link rel="stylesheet" href="./styles_06.css" />
+
+</head>
+
+<body>
+  <div class="search-form">
+    <h2>動物認領養系統 API</h2>
+  </div>
+  <div class="search-form">
+    <h2><span>請輸入查詢條件</span></h2>
+
+    <ul class="query">
+      <li><span>單頁顯示數量</span><select name="Animal" id="animalDropdown"></select></li>
+      <li><span>動物品種</span><select id="animalchange" name="select"></select></li>
+      <li class="place"><span>收容所</span><select id="ddlShelter"></select></li>
+      <li class="inLeft"><label><span>收容編號</span><input id="txtAcceptNum" type="text" placeholder="收容編號"></label></li>
+      <li class="inRight"><label><span>動物晶片號碼</span><input id="txtChipID" type="text" placeholder="動物晶片號碼"></label></li>
+    </ul>
+    <div class="clearFloat"></div>
+    <div class="queryOption">
+      <button id="Cancel" type="button"><span>取消</span></button>
+      <button id="Search" type="button"><span>查詢</span></button>
+    </div>
+
+  </div>
+
+  <section class="section cocktails">
+    <article class="loading">
+      <img src="./loading.gif" alt="loading">
+    </article>
+    <h2 class="title"></h2>
+    <div class="section-center"></div>
+
+  </section>
+  <script type="module" src="./app_06.js"></script>
+</body>
+
+</html>
