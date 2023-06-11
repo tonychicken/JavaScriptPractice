@@ -7,6 +7,10 @@
     <!-- 引入 Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script
+    type="module"
+    src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"
+  ></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -17,7 +21,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item dropdown">
-            <a   href="index.html"color: black;font-size:20px;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a   href="./index.html" style="color: black;font-size:20px;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Home
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
@@ -39,12 +43,30 @@
                 <div class="row" style="width: 700PX;">
                   <div class="col col-4 row">
                     <h6 class="dropdown-header">Week 1~6</h6>
-                    <a class="dropdown-item" href="./W01/index.html"onclick="CloseDropdown()">Week 1 (W1) </a>
-                    <a class="dropdown-item" href="./W02/tictactoe_06.html"onclick="CloseDropdown()">Week 2 (W2)</a>
-                    <a class="dropdown-item" href="./W03/index.html"onclick="CloseDropdown()">Week 3 (W3)</a>
-                    <a class="dropdown-item" href="./W04/index.html"onclick="CloseDropdown()">Week 4 (W4)</a>
-                    <a class="dropdown-item" href="./W05/index.html"onclick="CloseDropdown()">Week 5 (W5)</a>
-                    <a class="dropdown-item" href="./W06/index.html"onclick="CloseDropdown()">Week 6 (W6)</a>                             
+                    <div class="col col-6">
+                      <a class="dropdown-item" href="#" onclick="ShowDemo('W1')">Calculate</a>
+                      <a class="dropdown-item" href="#" onclick="ShowDemo('W2')">tictactoe_06</a>
+                    </div>
+                    <div class="col col-6">
+                      <a class="dropdown-item" href="#" onclick="ShowDemo('W1-MD')">(W1-MD)</a>
+                      <a class="dropdown-item" href="#" onclick="ShowDemo('W2-MD')">(W2-MD)</a>
+                    </div>
+                    <div class="col col-6">
+                      <a class="dropdown-item" href="#" onclick="ShowDemo('W3')" >(Review)</a>
+                      <a class="dropdown-item" href="#" onclick="ShowDemo('W4')">(Menu-1)</a>
+                    </div>
+                    <div class="col col-6">
+                      <a class="dropdown-item" href="#" onclick="ShowDemo('W3-MD')">W3-MD</a>
+                      <a class="dropdown-item" href="#" onclick="ShowDemo('W4-MD')">W4-MD</a>
+                    </div>
+                    <div class="col col-6">
+                      <a class="dropdown-item" href="#"onclick="ShowDemo('W5')">(Menu-2)</a>
+                      <a class="dropdown-item" href="#"onclick="ShowDemo('W6')">(Temp-Convert)</a>
+                    </div>
+                    <div class="col col-6">
+                      <a class="dropdown-item" href="#" onclick="ShowDemo('W5-MD')">(W5-MD)</a>  
+                      <a class="dropdown-item" href="#" onclick="ShowDemo('W6-MD')">(W6-MD)</a>  
+                    </div>                                                                  
                   </div>
                   <div class="col col-4">
                     <h6 class="dropdown-header">Midprep Exam (W7)</h6>
@@ -56,17 +78,41 @@
                     <a class="dropdown-item" href="#">P2</a>
                     <a class="dropdown-item" href="#">P3</a>
                     <a class="dropdown-item" href="#">P4</a>
-                  </div>
-                  <div class="col col-4">
-                    <h6 class="dropdown-header">Week 11~17</h6>
-                    <a class="dropdown-item" href="./W11/index.html"onclick="CloseDropdown()">Week 11 (W11) </a>
-                    <a class="dropdown-item" href="./W12/index.html"onclick="CloseDropdown()">Week 12 (W12)</a>
-                    <a class="dropdown-item" href="./W13/index.html"onclick="CloseDropdown()">Week 13 (W13)</a>
-                    <a class="dropdown-item" href="./W14/index.html"onclick="CloseDropdown()">Week 14 (W14)</a>
-                    <a class="dropdown-item" href="./W15/index.html"onclick="CloseDropdown()">Week 15 (W15)</a>
-                    <a class="dropdown-item" href="./W16/index.html"onclick="CloseDropdown()">Week 16 (W16)</a>
-                    <a class="dropdown-item" href="./W17/index.html"onclick="CloseDropdown()">Week 17 (W17)</a>  
-                    <a class="dropdown-item" href="./W18/index.html"onclick="CloseDropdown()">Week 18 (W18)</a>           
+                  </div>                  
+                  <div class="col col-4 row">
+                    <h6 class="dropdown-header">Week 11~18</h6>
+                    <div class="col col-6">
+                      <a class="dropdown-item" href="#" onclick="ShowDemo('W11')">W11</a>
+                      <a class="dropdown-item" href="#" onclick="ShowDemo('W12')">W12</a>
+                    </div>
+                    <div class="col col-6">
+                      <a class="dropdown-item" href="#" onclick="ShowDemo('W11-MD')">(W11-MD)</a>
+                      <a class="dropdown-item" href="#" onclick="ShowDemo('W12-MD')">(W12-MD)</a>
+                    </div>
+                    <div class="col col-6">
+                      <a class="dropdown-item" href="#" onclick="ShowDemo('W13')" >(W13)</a>
+                      <a class="dropdown-item" href="#" onclick="ShowDemo('W14')">(W14)</a>
+                    </div>
+                    <div class="col col-6">
+                      <a class="dropdown-item" href="#" onclick="ShowDemo('W13-MD')">W13-MD</a>
+                      <a class="dropdown-item" href="#" onclick="ShowDemo('W14-MD')">W14-MD</a>
+                    </div>
+                    <div class="col col-6">
+                      <a class="dropdown-item" href="#"onclick="ShowDemo('W15')">(W15)</a>
+                      <a class="dropdown-item" href="#"onclick="ShowDemo('W16')">(W16)</a>
+                    </div>
+                    <div class="col col-6">
+                      <a class="dropdown-item" href="#" onclick="ShowDemo('W15-MD')">(W15-MD)</a>  
+                      <a class="dropdown-item" href="#" onclick="ShowDemo('W16-MD')">(W16-MD)</a>  
+                    </div>
+                    <div class="col col-6">
+                      <a class="dropdown-item" href="#"onclick="ShowDemo('W17')">(W17)</a>
+                      <a class="dropdown-item" href="#"onclick="ShowDemo('W18')">(W18)</a>
+                    </div>
+                    <div class="col col-6">
+                      <a class="dropdown-item" href="#" onclick="ShowDemo('W17-MD')">(W17-MD)</a>  
+                      <a class="dropdown-item" href="#" onclick="ShowDemo('W18-MD')">(W18-MD)</a>  
+                    </div>                                                                   
                   </div>
                 </div>
               </div>
@@ -104,7 +150,5 @@
     <div id="content">
     </div>
   </body>
-  <script src="app.js" >
-    
-  </script>
+  <script src="app.js"></script>
 </html>
