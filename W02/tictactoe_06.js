@@ -26,6 +26,7 @@ const checkwin = (player) => {
         (p2&&p4&p6)||
         (p3&&p5&p9))
     {
+        console.log("asdasdsadasd",player)
         return sop(player);
     } 
     else
@@ -36,7 +37,8 @@ const checkwin = (player) => {
 
 }
 const sop=(player)=>{
-    if(player='o'){
+    console.log("asdasdsadasd",player)
+    if(player=='o'){
         container.style.backgroundColor="green"
         console.log(player+"贏了")
         alert(player+"贏了")

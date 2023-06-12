@@ -36,7 +36,7 @@ const checkwin = (player) => {
 
 }
 const sop=(player)=>{
-    if(player='o'){
+    if(player=='o'){
         container.style.backgroundColor="green"
         console.log(player+"贏了")
         alert(player+"贏了")
