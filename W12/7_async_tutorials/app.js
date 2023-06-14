@@ -1,0 +1,27 @@
+// const url= './api/people.json';
+
+// fetch(url)
+// .then(response=>response.json())
+
+// .then(response => console.log('Success:', response)).catch(error => console.error('Error:', error));
+
+// const url2= './api/sample.txt';
+
+const xhr = new XMLHttpRequest();
+xhr.open('GET', './api/sample.txt');
+xhr.onreadystatechange = function () {
+    console.log('xhr', xhr);
+    if (xhr.readyState === 4 && xhr.status === 200) {
+        const text = document.createElement('p');
+        console.log('text', text);
+        text.textContent = xhr.responseText;
+        document.body.appendChild(text);
+    } else {
+        console.log({
+            status: xhr.status,
+            text: xhr.statusText,
+            state: xhr.readyState
+        });
+    }
+}
+xhr.send();
