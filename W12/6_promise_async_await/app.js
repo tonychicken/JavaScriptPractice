@@ -1,6 +1,7 @@
 const test1=document.querySelector('.one');
 const test2=document.querySelector('.two');
-const test3=document.querySelector('.tree');
+const test3=document.querySelector('.three');
+const test5=document.querySelector('.four');
 const test4=document.querySelector('h1')
 
 const btn= document.querySelector('.btn');
@@ -15,6 +16,8 @@ const displayColor = async ()=>{
     await addColor(test1 , 100 , 'red');
     await addColor(test2 , 100 , 'green');
     await addColor(test3 , 100 , 'blue');
+    await addColor(test4 , 100 , 'purple');
+    await addColor(test5 , 100 , 'yellow');
   }catch(err){
     console.log(err);
   }
