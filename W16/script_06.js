@@ -59,7 +59,7 @@ const addMealToDOM = (meal) => {
       break;
     }
   }
-  console.log('ingredients', ingredients);
+  console.log('ingredients', ingredients); 
 
   single_mealEl.innerHTML = `
       <div class="single-meal">
