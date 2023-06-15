@@ -1,14 +1,15 @@
-// import { menu } from "./data.js";
-const url = './api/data.json'
+const supabaseUrl = 'https://mlybsphqojjqadpysauq.supabase.co'
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1seWJzcGhxb2pqcWFkcHlzYXVxIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NzgzNzgzMzYsImV4cCI6MTk5Mzk1NDMzNn0.MLaH9ADLG7fe2gVsXmiKOpsUwfi41lM7KlpFV2BiTx8'
+
 let menu;
 
 const sectionCenter = document.querySelector('.section-center');
 const btnContainer = document.querySelector('.btn-container');
 
+const url = 'https://mlybsphqojjqadpysauq.supabase.co/rest/v1/tblmenu?select=*'
+
 const displayMenuItems = (menu) => {
-  console.log(menu)
   let displayMenu = menu.map((item) => {
-console.log(item)
     return `
       </article>
       <article class="menu-item">
@@ -33,12 +34,12 @@ console.log(item)
 
 const displayMenuButtons = () => {
   console.log(menu)
-  const categories=['all', ...new Set(menu.map((item)=>item.category))];
-console.log(categories)
+  const categories = ['all', ...new Set(menu.map((item) => item.category))];
+  console.log(categories)
   let menuBottons = categories.map((category) => {
     return `<button type="button" class="filter-btn" data-id=${category}>${category}</button>`
   });
-  menuBottons =menuBottons.join('');
+  menuBottons = menuBottons.join('');
 
   console.log('categoryBtns before join', menuBottons);
   btnContainer.innerHTML = menuBottons;
@@ -68,18 +69,21 @@ console.log(categories)
 
 const fetchdata = async () => {
   try {
-const response= await fetch(url);
-const data = response.json();
-console.log(data)
-return data;
+    const response = await fetch(url, {
+      method: 'GET',
+      headers: {
+        apikey: `${supabaseKey}`,
+        Authorization: `Bearer ${supabaseKey}`
+      }
+    })
+    const data = await response.json();
+    return data;
   } catch (error) {
-console.log(error);
   }
 }
 window.addEventListener('DOMContentLoaded', async () => {
-  menu = await fetchdata(url);
+  menu = await fetchdata();
   console.log(menu)
   await displayMenuItems(menu);
   await displayMenuButtons();
 })
-
