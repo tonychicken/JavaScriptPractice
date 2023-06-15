@@ -1,5 +1,5 @@
 const supabaseUrl  = 'https://mlybsphqojjqadpysauq.supabase.co'
-const supabaseKey  = '"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1seWJzcGhxb2pqcWFkcHlzYXVxIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NzgzNzgzMzYsImV4cCI6MTk5Mzk1NDMzNn0.MLaH9ADLG7fe2gVsXmiKOpsUwfi41lM7KlpFV2BiTx8"'
+const supabaseKey  = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1seWJzcGhxb2pqcWFkcHlzYXVxIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NzgzNzgzMzYsImV4cCI6MTk5Mzk1NDMzNn0.MLaH9ADLG7fe2gVsXmiKOpsUwfi41lM7KlpFV2BiTx8'
 
 let menu;
 
